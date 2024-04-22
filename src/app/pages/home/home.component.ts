@@ -12,4 +12,9 @@ import { ProductsHeaderComponent } from "./components/products-header/products-h
 })
 export class HomeComponent {
   showFiller = false;
+  cols = 3;
+
+  onColumnsCountChange(colsNumber: number): void {
+    this.cols = colsNumber;
+  }
 }
